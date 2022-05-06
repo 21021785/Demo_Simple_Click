@@ -22,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         //Step 3: Link object to UI widget
         btn = findViewById(R.id.button1);
         name = findViewById(R.id.editTextTextPersonName1);
+        String txt = name.getText().toString();
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, name.getText(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, name.getText(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, txt, Toast.LENGTH_LONG).show();
             }
         });
 
