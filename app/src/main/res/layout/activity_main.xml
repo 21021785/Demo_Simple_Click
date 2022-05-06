@@ -31,7 +31,15 @@
         android:id="@+id/textViewDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="@string/show" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Disabled"
+        android:textOn="Enabled" />
 
 </LinearLayout>
