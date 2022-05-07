@@ -42,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 //display.setText(txt);
                 if(checkedRadioId == R.id.radioButtonGenderMale){
                     display.setText("He says " + txt);
-                } else {
+                } else if (checkedRadioId == R.id.radioButtonGenderFemale){
                     display.setText("She says " + txt);
+                } else {
+                    display.setText("It says" + txt);
                 }
             }
         });
